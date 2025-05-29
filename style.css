@@ -193,20 +193,25 @@ header {
   flex: 1;
 }
 
+
 .photo-circle {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   border: 6px solid #1abc9c;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   overflow: hidden;
   margin: 0 auto;
+  
 }
 
 .photo-circle img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit: cover;
+  object-position: center center; /* fixes the image in center */
+  pointer-events: none;           /* prevents accidental drag */
+  user-select: none;              /* disables image selection */
 }
 
 /* Typewriter Effect */
