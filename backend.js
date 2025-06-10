@@ -89,3 +89,15 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
       alert("Error sending form: " + error.message);
     });
   });
+
+
+function animateGitHub(event) {
+  event.preventDefault();
+  const icon = document.getElementById('githubIcon');
+  icon.classList.add('animate');
+
+  setTimeout(() => {
+    window.open("https://github.com/Coder-Sandip", "_blank");
+    icon.classList.remove('animate');
+  }, 800);
+}

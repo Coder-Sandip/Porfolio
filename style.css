@@ -206,7 +206,7 @@ header {
 }
 
 .photo-circle img {
-  width: 80%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   object-position: center center; /* fixes the image in center */
@@ -644,3 +644,53 @@ header {
     transform: translateY(0);
   }
 }
+
+.github-link-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.github-icon {
+  width: 50px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.github-icon.animate {
+  animation: spin 0.8s ease forwards;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.github-label {
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #333;
+}
+.wave-emoji {
+  display: inline-block;
+  animation: wave 2s ease-in-out;
+  transform-origin: 70% 70%;
+  font-size: 1.4rem;
+}
+
+/* Keyframes for wave motion */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+
