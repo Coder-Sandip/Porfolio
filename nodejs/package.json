@@ -1,0 +1,19 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "this is a spotify music",
+  "main": "servers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "spotify",
+    "music"
+  ],
+  "author": "Sandip",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "slugify": "^1.6.6"
+  }
+}
